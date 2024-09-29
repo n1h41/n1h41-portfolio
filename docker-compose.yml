@@ -1,0 +1,13 @@
+services:
+  app:
+    build: ./app
+    volumes:
+      - ./app:/usr/src/app
+    command: air --build.cmd "go build -o build/app cmd/main.go" --build.bin "build/app"
+
+  server:
+    build: ./nginx/
+    ports:
+      - "80:80"
+    depends_on:
+      - app

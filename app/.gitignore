@@ -1,0 +1,7 @@
+node_modules
+build
+.env
+views/**/*_templ.txt
+views/**/*_templ.go
+config/config.yaml
+tmp
