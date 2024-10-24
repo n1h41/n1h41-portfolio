@@ -4,17 +4,15 @@ import "github.com/n1h41/portfolio/views"
 
 templ Home() {
 	@views.Base() {
-		<section class="bg-gray-900 text-white">
+		<section class="bg-gray-900 text-white w-screen h-screen flex">
 			<div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
 				<div class="max-w-xl">
-					<h2 class="text-3xl font-bold sm:text-4xl">What makes us special</h2>
+					<h2 class="text-3xl font-bold sm:text-4xl">n1h41</h2>
 					<p class="mt-4 text-gray-300">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores iure fugit totam
-						iste obcaecati. Consequatur ipsa quod ipsum sequi culpa delectus, cumque id tenetur
-						quibusdam, quos fuga minima.
+						Dedicated to the art of programming and the craft of software development.
 					</p>
 				</div>
-				<div class="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+				<div class="mt-8 grid grid-cols-1 gap-8 md:mt-4 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
 					<div class="flex items-start gap-4">
 						<span class="shrink-0 rounded-lg bg-gray-800 p-4">
 							<svg
@@ -37,7 +35,7 @@ templ Home() {
 							</svg>
 						</span>
 						<div>
-							<h2 class="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 class="text-lg font-bold">Flutter</h2>
 							<p class="mt-1 text-sm text-gray-300">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab
 								possimus quisquam reiciendis tempora animi! Quaerat, saepe?
@@ -66,7 +64,7 @@ templ Home() {
 							</svg>
 						</span>
 						<div>
-							<h2 class="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 class="text-lg font-bold">Golang</h2>
 							<p class="mt-1 text-sm text-gray-300">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab
 								possimus quisquam reiciendis tempora animi! Quaerat, saepe?
@@ -95,7 +93,7 @@ templ Home() {
 							</svg>
 						</span>
 						<div>
-							<h2 class="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 class="text-lg font-bold">DSA</h2>
 							<p class="mt-1 text-sm text-gray-300">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab
 								possimus quisquam reiciendis tempora animi! Quaerat, saepe?
@@ -124,7 +122,7 @@ templ Home() {
 							</svg>
 						</span>
 						<div>
-							<h2 class="text-lg font-bold">Lorem, ipsum dolor.</h2>
+							<h2 class="text-lg font-bold">ASP .Net Core</h2>
 							<p class="mt-1 text-sm text-gray-300">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempore est ab
 								possimus quisquam reiciendis tempora animi! Quaerat, saepe?
@@ -190,6 +188,33 @@ templ Home() {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+				<h2 class="text-lg font-bold">My Tools</h2>
+				<ul class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1">
+					<li class="flex items-center gap-2">
+						<span class="shrink-0 rounded-lg bg-gray-500"><img src="/static/assets/icons/neovim.svg" alt=""/> </span>
+						<span class="text-sm text-gray-300">Neovim</span>
+					</li>
+					<li class="flex items-center gap-2">
+						<span class="shrink-0 rounded-lg bg-gray-500">
+							<img src="/static/assets/icons/git.svg" alt=""/>
+						</span>
+						<span class="text-sm text-gray-300">Git</span>
+					</li>
+					<li class="flex items-center gap-2">
+						<span class="shrink-0 rounded-lg bg-gray-500">
+							<img src="/static/assets/icons/docker.svg" alt=""/>
+						</span>
+						<span class="text-sm text-gray-300">Docker</span>
+					</li>
+					<li class="flex items-center gap-2">
+						<span class="shrink-0 rounded-lg bg-gray-500">
+							<img src="/static/assets/icons/archlinux.svg" alt=""/>
+						</span>
+						<span class="text-sm text-gray-300">ArchLinux</span>
+					</li>
+				</ul>
 			</div>
 		</section>
 	}
