@@ -8,4 +8,4 @@ COPY . .
 
 RUN go install github.com/a-h/templ/cmd/templ@latest
 RUN templ generate
-RUN go mod tidy
+RUN go mod download
